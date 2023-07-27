@@ -1,0 +1,127 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography';
+
+
+
+.header{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo{
+        width: 50%;
+
+    }
+
+    &__div--mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        @include tablet {
+            height: 0;
+        }
+
+        @include desktop {
+            height: 0;
+        }
+
+    }
+    &__search-bar{
+        width: 90%;
+        height: 12.5vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        color: $primary-brainFlix-black;
+        ::placeholder{
+            color: $primary-brainFlix-black;
+        }
+     
+    }
+
+    &__search-input{
+        padding: .3125rem .625rem .3125rem 1.5rem;
+        width: 100%;
+        @include font-button-label;
+        background-color: $secondary-alabaster;
+        border: .0625rem solid $secondary-mercury;
+        color: $primary-brainFlix-black;
+        border-radius: 0.25rem;
+        ::placeholder{
+            color: $primary-brainFlix-black;
+        }
+        
+    }
+    &__search-icon{
+        position: absolute;
+        left: 2vw;
+        height: 5vw;
+        width: 5vw;
+
+    }
+    &__avatar{
+        border-radius: 50%;
+        height: 12.5vw;
+        width: 12.5vw;
+     
+
+
+    }
+    &__button{
+        position: relative;
+        margin-top: 1rem;
+        background-color: $primary-brainFlix-blue;
+        color: $primary-brainFlix-white;
+        border-radius: 0.25rem;
+        border: none;
+        width: 100%;
+        // height: 12.5vw;
+        padding: .3125rem .625rem;
+        @include font-button-label;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      
+
+        @include tablet {
+            @include font-button-label-dt;
+            width: 30%;
+        }
+
+        @include desktop {
+            @include font-button-label-dt;
+            width: 20%;
+        }
+
+    }
+
+
+
+    &__button-content > span{
+        // height: 1.125rem;
+        // position: absolute;
+        // transform: translateX(-620%);
+       
+        text-align: center;
+    }
+    &__upload-img{
+        // height: 1.125rem;
+        // position: absolute;
+        // transform: translateX(-620%);
+        margin-right: .3125rem;
+        position: absolute; 
+        left: 5px;
+    }
+
+    
+}
