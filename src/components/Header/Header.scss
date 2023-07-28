@@ -2,10 +2,8 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography';
 
-// import search from '../../assets/images/search.svg';
-
 .header{
-    padding: 1rem;
+    padding: .75rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,21 +12,25 @@
     @include tablet {
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        padding: .875rem;
+
     }
 
     @include desktop {
+        padding: 1.0625rem;
 
     }
 
     &__logo{
-        width: 50%;
+        width: 37.75%;
         @include tablet {
-            width: 15%;
+            width: 16.5%;
+            margin-left: 1.25rem;
         }
-    
         @include desktop {
-       
-    
+            width: 13.75%;
+            margin-left: 10.25rem;
         }
     }
 
@@ -38,7 +40,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1rem;
+        margin-top: .875rem;
         @include tablet {
             display: none;
         }
@@ -51,7 +53,6 @@
     &__search-bar{
         width: 90%;
         height: 12.5vw;
-        // position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -62,31 +63,24 @@
         ::placeholder{
             color: $primary-brainFlix-black;
         }
-     
     }
 
     &__search-input{
-        padding: .3125rem .625rem .3125rem 1.75rem;
+        padding: .475rem .625rem .475rem 2.25rem;
         width: 100%;
-        @include font-button-label;
+        @include font-form-label;
         background-color: $secondary-alabaster;
         border: .0625rem solid $secondary-mercury;
         color: $primary-brainFlix-black;
         border-radius: 0.25rem;
         background-image: url('../../assets/images/search.svg');
-        background-position: left;
+        background-position: 4%;
         background-repeat: no-repeat;
+        background-size: 7%;
         ::placeholder{
             color: $primary-brainFlix-black;
         }
         
-    }
-    &__search-icon{
-        // position: absolute;
-        // left: 3vw;
-        height: 5vw;
-        width: 5vw;
-
     }
 
     &__search-bar-dt{
@@ -112,34 +106,34 @@
         }
     }
     &__avatar-dt{
-
         display:none;
 
         @include tablet {
             border-radius: 50%;
-            height: 4.25vw;
-            width: 4.25vw;
+            height: 5.5vw;
+            width: 5.5vw;
             object-fit: cover;
             display: block;
 
         }
     
         @include desktop {
-            height: 2.875vw;
-            width: 2.875vw;
+            height: 3.125vw;
+            width: 3.125vw;
+            margin-right: 4rem
 
         }
     }     
         
     &__button{
         position: relative;
-        margin-top: 1rem;
+        margin: .875rem 0 .25rem 0;
         background-color: $primary-brainFlix-blue;
         color: $primary-brainFlix-white;
         border-radius: 0.25rem;
         border: none;
         width: 100%;
-        padding: .3125rem .625rem;
+        padding: .625rem;
         @include font-button-label;
         display: flex;
         flex-direction: row;
@@ -161,9 +155,10 @@
     }
     &__button-content > span{
         text-align: center;
+        @include font-button-label;
     }
     &__upload-img{
-        height: 1rem;
+        height: 1.2rem;
         margin-right: .3125rem;
         position: absolute; 
         left: .3125rem;

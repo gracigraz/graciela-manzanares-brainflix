@@ -1,6 +1,6 @@
-import './Comment.scss';
+import './CommentItem.scss';
 
-function Comment() {
+function CommentItem() {
     return (
         <>
             <div className="comment">
@@ -16,10 +16,8 @@ function Comment() {
                     <p className="comment__message"></p>
                 </div>
             </div>
-
-
         </>
     )
 }
 
-export default Comment;
+export default CommentItem;

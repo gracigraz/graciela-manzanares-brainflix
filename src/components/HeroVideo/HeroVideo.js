@@ -1,8 +1,8 @@
 
-import './Hero.scss';
+import './HeroVideo.scss';
 import logo from '../../assets/images/BrainFlix-logo.svg';
 
-function Hero() {
+function HeroVideo() {
     return(
         <>
         <div><video poster="https://i.imgur.com/l2Xfgpl.jpg" controls>
@@ -11,4 +11,4 @@ function Hero() {
         </>
     )
 }
-export default Hero;
+export default HeroVideo;

@@ -5,16 +5,18 @@
 
 video{
     width: 100%;
-    height: 56vw;
+    height: 56.5vw;
     background-color: $secondary-brainFlix-darkBlack;
 
     @include tablet {
-        width: 50%;
-        height: 57vw;
-       
+        width: 89.6%;
+        padding: 0 2.5rem;
+        height: 50.125vw;
     }
 
     @include desktop {
-        width: 80%;
+        width: 84.375%;
+        padding: 0 6.25rem;
+        height: 37.125vw;
     }
 }
