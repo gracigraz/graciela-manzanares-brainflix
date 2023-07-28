@@ -1,0 +1,20 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography';
+
+
+video{
+    width: 100%;
+    height: 56vw;
+    background-color: $secondary-brainFlix-darkBlack;
+
+    @include tablet {
+        width: 50%;
+        height: 57vw;
+       
+    }
+
+    @include desktop {
+        width: 80%;
+    }
+}

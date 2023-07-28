@@ -2,7 +2,7 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography';
 
-
+// import search from '../../assets/images/search.svg';
 
 .header{
     padding: 1rem;
@@ -10,10 +10,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $primary-brainFlix-white;
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @include desktop {
+
+    }
 
     &__logo{
         width: 50%;
-
+        @include tablet {
+            width: 15%;
+        }
+    
+        @include desktop {
+       
+    
+        }
     }
 
     &__div--mobile{
@@ -24,24 +40,25 @@
         align-items: center;
         margin-top: 1rem;
         @include tablet {
-            height: 0;
+            display: none;
         }
 
         @include desktop {
-            height: 0;
+            display: none;
         }
 
     }
     &__search-bar{
         width: 90%;
         height: 12.5vw;
-        position: relative;
+        // position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-right: 1rem;
         color: $primary-brainFlix-black;
+        
         ::placeholder{
             color: $primary-brainFlix-black;
         }
@@ -49,33 +66,71 @@
     }
 
     &__search-input{
-        padding: .3125rem .625rem .3125rem 1.5rem;
+        padding: .3125rem .625rem .3125rem 1.75rem;
         width: 100%;
         @include font-button-label;
         background-color: $secondary-alabaster;
         border: .0625rem solid $secondary-mercury;
         color: $primary-brainFlix-black;
         border-radius: 0.25rem;
+        background-image: url('../../assets/images/search.svg');
+        background-position: left;
+        background-repeat: no-repeat;
         ::placeholder{
             color: $primary-brainFlix-black;
         }
         
     }
     &__search-icon{
-        position: absolute;
-        left: 2vw;
+        // position: absolute;
+        // left: 3vw;
         height: 5vw;
         width: 5vw;
 
     }
+
+    &__search-bar-dt{
+        display: none;
+        @include tablet {
+            display: block;
+        }
+
+        @include desktop {
+        }
+    }
     &__avatar{
         border-radius: 50%;
-        height: 12.5vw;
-        width: 12.5vw;
-     
+        height: 11.5vw;
+        width: 11.5vw;
+        object-fit: cover;
+        @include tablet {
+            display: none;
+        }
 
-
+        @include desktop {
+            display: none;
+        }
     }
+    &__avatar-dt{
+
+        display:none;
+
+        @include tablet {
+            border-radius: 50%;
+            height: 4.25vw;
+            width: 4.25vw;
+            object-fit: cover;
+            display: block;
+
+        }
+    
+        @include desktop {
+            height: 2.875vw;
+            width: 2.875vw;
+
+        }
+    }     
+        
     &__button{
         position: relative;
         margin-top: 1rem;
@@ -84,7 +139,6 @@
         border-radius: 0.25rem;
         border: none;
         width: 100%;
-        // height: 12.5vw;
         padding: .3125rem .625rem;
         @include font-button-label;
         display: flex;
@@ -94,33 +148,25 @@
       
 
         @include tablet {
-            @include font-button-label-dt;
-            width: 30%;
+            margin-top: 0;
+            margin-right: 1.5rem;
+            width: 21%;
         }
 
         @include desktop {
-            @include font-button-label-dt;
             width: 20%;
+            margin-right: 3rem;
         }
 
     }
-
-
-
     &__button-content > span{
-        // height: 1.125rem;
-        // position: absolute;
-        // transform: translateX(-620%);
-       
         text-align: center;
     }
     &__upload-img{
-        // height: 1.125rem;
-        // position: absolute;
-        // transform: translateX(-620%);
+        height: 1rem;
         margin-right: .3125rem;
         position: absolute; 
-        left: 5px;
+        left: .3125rem;
     }
 
     
