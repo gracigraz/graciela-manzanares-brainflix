@@ -2,15 +2,19 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography';
 
-.hero-video{
+.hero-video-details{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $secondary-brainFlix-darkBlack;
     
+    
+    &__div{
+        background-color: $secondary-brainFlix-darkBlack;
+    }
     &__poster{
-        aspect-ratio: 16/9;
+        
         width: 100%;
+        aspect-ratio: 16/9;
         @include tablet {
             width: 89.6%;
         }
@@ -18,5 +22,28 @@
         @include desktop {
             width: 84.375%;
         }
+    }
+
+    &__summary{
+
+    }
+    &__title{
+        border-bottom: .0625rem $secondary-mercury solid;
+        
+    }
+    &__date{
+        
+    }
+    &__channel{
+
+    }
+    &__views{
+
+    }
+    &__likes{
+
+    }
+    &__description{
+
     }
 }

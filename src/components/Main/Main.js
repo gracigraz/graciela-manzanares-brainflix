@@ -1,5 +1,4 @@
 import HeroVideoDetails from '../HeroVideoDetails/HeroVideoDetails';
-// import VideoDescription from '../VideoDescription/VideoDescription';
 import { useState } from 'react';
 import videoDetails from '../../data/video-details.json';
 import videos from '../../data/videos.json'

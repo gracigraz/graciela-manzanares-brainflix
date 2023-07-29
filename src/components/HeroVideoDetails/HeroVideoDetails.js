@@ -1,31 +1,31 @@
 
 import './HeroVideoDetails.scss';
-import logo from '../../assets/images/BrainFlix-logo.svg';
+
  //accept selectedVideo
 //  {selectedVideo}
 function HeroVideoDetails() {
 
     return (
-        <section className='hero-video-details'>
-            <div className='hero-video'>
+        <article className='hero-video-details'>
+            <div className='hero-video-details__div'>
                 <video className='hero-video-details__poster' poster="https://i.imgur.com/l2Xfgpl.jpg" controls>
                 </video>
             </div>
-            <section className="description">
-                <h1 className="description__heading">NEXT VIDEOS</h1>
+            <section className="hero-video-details__summary">
+                <h1 className="hero-video-details__title">NEXT VIDEOS</h1>
                 <div>
-                    <h4 className="comment__name"></h4>
-                    <span className="comment__date"></span>
-                    <img className="next-videos__thumbnail"
+                    <h4 className="hero-video-details__channel"></h4>
+                    <span className="hero-video-details__date"></span>
+                    <img className="hero-video-details__views"
                         src=""
                         alt="" />
-                    <img className="next-videos__thumbnail"
+                    <img className="hero-video-details__likes"
                         src=""
                         alt="" />
                 </div>
-                <p className="description__copy"></p>
+                <p className="hero-video-details__description"></p>
             </section>
-            </section>
+        </article> 
     )
 }
 export default HeroVideoDetails;
