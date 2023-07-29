@@ -4,6 +4,7 @@
 
 .hero-video-details{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -25,25 +26,128 @@
     }
 
     &__summary{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $primary-brainFlix-black;
 
     }
     &__title{
-        border-bottom: .0625rem $secondary-mercury solid;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 1rem;
+        @include font-page-header;
+
+        @include tablet{
+            @include font-page-header-dt;
+
+        }
+        @include desktop{
+            @include font-page-header-dt;
+            
+        }
         
     }
-    &__date{
+    &__div-header{
+        border-bottom: .0625rem $secondary-mercury solid;
+        border-top: .0625rem $secondary-mercury solid;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 0;
+
+    }
+    &__div-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+
+    &__date {
+        color: $primary-brainFlix-silver;
+        @include font-body-copy;
+        @include tablet{
+            @include font-body-copy-dt;
+
+        }
+        @include desktop{
+            @include font-body-copy-dt;
+            
+        }
         
     }
     &__channel{
+        @include font-subheader;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 1rem;
+        
+        @include tablet{
+            @include font-subheader-dt;
 
+        }
+        @include desktop{
+            @include font-subheader-dt;
+            
+        }
+
+        
     }
     &__views{
+        color: $primary-brainFlix-silver;
+        background-image: url('../../assets/images/views.svg');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 10%;
+        text-indent: 12%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 1rem;
+        @include font-body-copy;
+        @include tablet{
+            @include font-body-copy-dt;
+
+        }
+        @include desktop{
+            @include font-body-copy-dt;
+            
+        }
 
     }
     &__likes{
+        color: $primary-brainFlix-silver;
+        @include font-body-copy;
+        background-image: url('../../assets/images/likes.svg');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 10%;
+        text-indent: 12%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        @include tablet{
+            @include font-body-copy-dt;
+
+        }
+        @include desktop{
+            @include font-body-copy-dt;
+            
+        }
 
     }
     &__description{
+        @include font-body-copy;
+        @include tablet{
+            @include font-body-copy-dt;
+
+        }
+        @include desktop{
+            @include font-body-copy-dt;
+            
+        }
+
 
     }
 }
