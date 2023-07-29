@@ -15,8 +15,7 @@ function Header() {
                     <img className="header__avatar" src={profile} alt="Mohan Muruge Profile Avatar Image" />
                 </div>
                 <div className='header__search-bar-dt' id='searchWrapper'>
-                        {/* <img className="header__search-icon" src={search} alt="Search Icon" /> */}
-                        <input className='header__search-input' type='text' placeholder="Search" name="searchWrapper"></input>
+                    <input className='header__search-input' type='text' placeholder="Search" name="searchWrapper"></input>
                 </div>
                 <button className='header__button' type='button'>
                         <img className='header__upload-img' src={upload} alt='upload icon' />
@@ -24,6 +23,7 @@ function Header() {
                 </button>
                 <img className="header__avatar-dt" src={profile} alt="Mohan Muruge Profile Avatar Image" />
             </header>
+            
         </>
     )
 }

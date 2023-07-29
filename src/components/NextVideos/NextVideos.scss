@@ -1,0 +1,56 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography';
+
+.next-videos{
+    background-color: $primary-brainFlix-white;
+    &__heading{
+        color: $primary-brainFlix-silver;
+        @include font-subheader;
+        @include tablet {
+            @include font-subheader-dt;
+        }
+        @include desktop {
+            @include font-subheader-dt;
+        } 
+    }
+    &__item{
+        display: flex;
+        flex-direction: row;
+
+    }
+    &__thumbnail{
+        width: 100%;
+        border-radius: .25rem;
+        background-color: $secondary-mercury;
+
+    }
+    &__body{
+        color: $primary-brainFlix-black;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__video-title{
+        @include font-body-copy;
+        font-weight: 700;
+        @include tablet {
+            @include font-body-copy-dt;
+        }
+        @include desktop {
+            @include font-body-copy-dt;
+        }
+
+    }
+    &__author{
+        @include font-body-copy;
+        @include tablet {
+            @include font-body-copy-dt;
+        }
+        @include desktop {
+            @include font-body-copy-dt;
+        }
+
+
+    }
+}

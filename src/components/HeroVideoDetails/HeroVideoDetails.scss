@@ -1,0 +1,22 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography';
+
+.hero-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-brainFlix-darkBlack;
+    
+    &__poster{
+        aspect-ratio: 16/9;
+        width: 100%;
+        @include tablet {
+            width: 89.6%;
+        }
+    
+        @include desktop {
+            width: 84.375%;
+        }
+    }
+}
