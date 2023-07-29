@@ -3,23 +3,22 @@
 @use '../../styles/partials/typography';
 
 .header{
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $primary-brainFlix-white;
-    border-bottom: 1px black solid;
+
     @include tablet {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: .875rem;
+        padding: 1rem;
 
     }
 
-    @include desktop {
-        padding: 1.0625rem;
+    @include desktop { 
 
     }
 
@@ -27,13 +26,14 @@
         width: 38%;
         @include tablet {
             width: 14.25%;
-            margin-left: 1.6rem;
+            margin-left: 1.2rem;
             margin-right: 5.5rem;
+            max-height: 5.2vw;
         }
         @include desktop {
             width: 9%;
             margin-left: 7.25rem;
-            margin-right: 14.5rem;
+            margin-right: 23rem;
         }
     }
 
@@ -58,7 +58,6 @@
         flex-direction: row;
         margin-right: 1rem;
         color: $primary-brainFlix-black;
-     
         
         ::placeholder{
             color: $primary-brainFlix-black;
@@ -82,6 +81,18 @@
         background-repeat: no-repeat;
         background-size: 6.5%;
         text-indent: 10%;
+        @include tablet {
+            padding: .6rem .625rem;
+            background-position: 6% center;
+            background-size: 7.375%;
+            text-indent: 13%;
+        }
+        @include desktop {
+            background-position: 8% center;
+            padding: .6rem .625rem;
+            background-size: 7.75%;
+            text-indent: 15%;
+        }
         
         ::placeholder{
             color: $primary-brainFlix-black;
@@ -101,7 +112,7 @@
         }
 
         @include desktop {
-            width: 27.5%;
+            width: 19%;
         }
     }
     &__avatar{
@@ -125,10 +136,10 @@
 
         @include tablet {
             border-radius: 50%;
-            height: 5.125vw;
-            max-height: 5.125vw; //5.2
-            max-width: 5.125vw;
-            width: 5.125vw;
+            height: 5.2vw;
+            max-height: 5.2vw;
+            max-width: 5.2vw;
+            width: 5.2vw;
             object-fit: cover;
             display: block;
             margin-right: 1.4rem;
@@ -138,7 +149,9 @@
         @include desktop {
             height: 3.125vw;
             width: 3.125vw;
-            margin-right: 4rem
+            max-width:3.125vw;
+            max-height: 3.125vw;
+            margin-right: 8rem;
 
         }
     }     
@@ -161,19 +174,28 @@
 
         @include tablet {
             margin: 0 ;
-            width: 20%;
-            padding: .55rem;
+            width: 20.5%;
+            padding: .6rem;
+            @include font-button-label-dt
         }
 
         @include desktop {
             width: 12%;
-            margin-right: 3rem;
+            margin-right: 0;
+            @include font-button-label-dt
         }
 
     }
     &__button-content > span{
         text-align: center;
         @include font-button-label;
+        @include tablet {
+            @include font-button-label-dt
+        }
+        @include desktop {
+            @include font-button-label-dt
+        }
+
     }
     &__upload-img{
         height: 1.2rem;
@@ -181,6 +203,5 @@
         position: absolute; 
         left: .3125rem;
     }
-
     
 }
