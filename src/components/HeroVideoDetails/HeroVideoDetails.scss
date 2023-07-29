@@ -11,17 +11,20 @@
     
     &__div{
         background-color: $secondary-brainFlix-darkBlack;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &__poster{
-        
         width: 100%;
         aspect-ratio: 16/9;
         @include tablet {
-            width: 89.6%;
+            width: 90.5%;
         }
     
         @include desktop {
-            width: 84.375%;
+            width: 66.5%;
         }
     }
 
@@ -30,7 +33,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         color: $primary-brainFlix-black;
 
     }
@@ -57,12 +59,52 @@
         flex-direction: row;
         width: 100%;
         padding: 1rem 0;
+        @include tablet{
+            border-top: none;
+            padding-top: 0; 
+
+        }
+        @include desktop{
+            border-top: none;
+            padding-top: 0; 
+        }
 
     }
     &__div-mobile{
         display: flex;
         flex-direction: column;
         width: 50%;
+        @include tablet{
+            flex-direction: row;
+
+        }
+        @include desktop{
+            flex-direction: row;
+            
+        }
+        &--left{
+            @include tablet{
+                justify-content: flex-start;
+    
+            }
+            @include desktop{
+                justify-content: flex-start;
+                
+            }
+            
+        }
+        &--right{
+
+            @include tablet{
+                justify-content: flex-end;
+    
+            }
+            @include desktop{
+                justify-content: flex-end;
+                
+            }
+            
+        }
         
     }
 
@@ -87,10 +129,14 @@
         
         @include tablet{
             @include font-subheader-dt;
+            margin-right: 1rem;
+            margin-bottom: 0rem;
 
         }
         @include desktop{
             @include font-subheader-dt;
+            margin-right: 1rem;
+            margin-bottom: 0rem;
             
         }
 
@@ -101,18 +147,24 @@
         background-image: url('../../assets/images/views.svg');
         background-position: left;
         background-repeat: no-repeat;
-        background-size: 10%;
-        text-indent: 12%;
+        // background-size: contain; //15%
+        text-indent: 2rem;
         margin-block-start: 0;
         margin-block-end: 0;
         margin-bottom: 1rem;
         @include font-body-copy;
         @include tablet{
             @include font-body-copy-dt;
+            margin-bottom: 0rem;
+            // background-size: 30%;
+            text-indent: 2.5rem;
 
         }
         @include desktop{
             @include font-body-copy-dt;
+            margin-bottom: 0rem;
+            // background-size: 30%;
+            text-indent: 4rem;
             
         }
 
@@ -123,16 +175,22 @@
         background-image: url('../../assets/images/likes.svg');
         background-position: left;
         background-repeat: no-repeat;
-        background-size: 10%;
-        text-indent: 12%;
+        // background-size: contain;//12
+        text-indent: 1.5rem;
         margin-block-start: 0;
         margin-block-end: 0;
         @include tablet{
             @include font-body-copy-dt;
+            margin-left: 4rem;
+            // background-size: 29%;
+            text-indent: 2rem;
 
         }
         @include desktop{
             @include font-body-copy-dt;
+            margin-left: 2rem;
+            // background-size: 27%;
+            text-indent: 4rem;
             
         }
 

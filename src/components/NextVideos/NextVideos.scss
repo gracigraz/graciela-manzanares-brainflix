@@ -4,8 +4,13 @@
 
 .next-videos{
     background-color: $primary-brainFlix-white;
+    padding: 0 1rem;
+    
     &__heading{
+        border-top: .0625rem $secondary-mercury solid;
         color: $primary-brainFlix-silver;
+        width: 100%;
+        padding: 1rem 0;
         @include font-subheader;
         @include tablet {
             @include font-subheader-dt;

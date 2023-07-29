@@ -16,11 +16,11 @@ function HeroVideoDetails() {
             <section className="hero-video-details__summary">
                 <h1 className="hero-video-details__title">BMX Rampage: 2021 Highlights</h1>
                 <div className='hero-video-details__div-header'>
-                    <div className="hero-video-details__div-mobile">
+                    <div className="hero-video-details__div-mobile hero-video-details__div-mobile--left">
                         <h4 className="hero-video-details__channel">By Red Cow</h4>
                         <span className="hero-video-details__date">07/11/2021</span>
                     </div>
-                    <div className="hero-video-details__div-mobile">
+                    <div className="hero-video-details__div-mobile hero-video-details__div-mobile--right">
                         <p className="hero-video-details__views">1,001.023</p>
                         <p className="hero-video-details__likes">110,985</p>
                     </div>
