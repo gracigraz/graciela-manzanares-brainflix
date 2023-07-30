@@ -7,7 +7,6 @@ function Header() {
     return (
         <>
             <header className="header">
-       
                 <img className="header__logo" src={logo} alt="Logo" />
                 <div className='header__div--mobile'>
                     <div className='header__search-bar' id='searchWrapper'>
@@ -24,7 +23,6 @@ function Header() {
                         <span>UPLOAD</span>
                 </button>
                 <img className="header__avatar-dt" src={profile} alt="Mohan Muruge Profile Avatar Image" />
-        
             </header>
             
         </>

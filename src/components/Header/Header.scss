@@ -21,16 +21,23 @@
 
     &__logo{
         width: 38%;
+        max-height: 7.813vw;
+        max-width: 37.500vw;
+
         @include tablet {
             width: 14.25%;
             margin-left: 1.2rem;
             margin-right: 5.5rem;
             max-height: 5.2vw;
+            max-width: 15.625vw;
+
         }
         @include desktop {
             width: 9%;
             margin-left: 7.25rem;
             margin-right: 23rem;
+            max-width: 9.375vw;
+            max-height: 3.125vw;
         }
     }
 
@@ -202,3 +209,4 @@
     }
     
 }
+
