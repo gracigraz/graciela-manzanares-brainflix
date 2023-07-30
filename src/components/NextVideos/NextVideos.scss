@@ -4,7 +4,13 @@
 
 .next-videos{
     background-color: $primary-brainFlix-white;
-    padding: 0 1rem;
+    padding: 0 1rem .375rem 1rem;
+    @include tablet{
+        padding: 1rem 2.35rem;
+    }
+    @include desktop{
+        padding: 1rem 2.5rem 1rem 8rem;
+    }
     
     &__heading{
         margin-block-start: 0;
@@ -12,13 +18,17 @@
         border-top: .0625rem $secondary-mercury solid;
         color: $primary-brainFlix-silver;
         padding: 1rem 0;
-        @include font-subheader;
+
+        @include font-button-label;
         @include tablet {
-            @include font-subheader-dt;
+            @include font-button-label-dt;
+     
         }
         @include desktop {
-            @include font-subheader-dt;
+            @include font-button-label-dt;
+      
         } 
+      
     }
     &__item{
         display: flex;
@@ -35,6 +45,14 @@
         border-radius: .25rem;
         border: none;
         background-color: $secondary-mercury;
+        @include tablet {
+            width: 16%;
+     
+        }
+        @include desktop {
+            width: 36%;
+      
+        } 
 
     }
     &__body{
@@ -42,7 +60,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 1rem;
+        padding-left: 0.875rem;
+        @include tablet {
+            width: 28%;
+     
+        }
+        @include desktop {
+            width: 36%;
+      
+        } 
 
     }
     &__video-title{
@@ -52,9 +78,11 @@
         font-weight: 700;
         @include tablet {
             @include font-body-copy-dt;
+            font-weight: 700;
         }
         @include desktop {
             @include font-body-copy-dt;
+            font-weight: 700;
         }
 
     }
