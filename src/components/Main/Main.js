@@ -3,6 +3,7 @@ import { useState } from 'react';
 import videoDetails from '../../data/video-details.json';
 import videos from '../../data/videos.json'
 import NextVideos from '../NextVideos/NextVideos';
+import Comments from '../Comments/Comments';
 
 function Main() {
 
@@ -28,6 +29,7 @@ function Main() {
       <main className= 'video-page'>
         <HeroVideoDetails /> 
         {/* selectedVideo = {selectedVideo} */}
+        <Comments />
         <NextVideos  />
         {/* filteredVideos = {filteredVideos} handleSelectVideo={handleSelectVideo} */}
       </main>
