@@ -7,13 +7,13 @@ function Comments() {
     return (
         <section className='comments'>
             <span className="comments__counter">3 Comments</span>
-            <form id="comments__form" class="comments__form">
-                <label for="comments__profile-img">
-                    <input id="comments__profile-img" class="comments__profile-img" type="image" name="image"
+            <form id="comments__form" className="comments__form">
+                <label htmlFor="comments__profile-img">
+                    <input id="comments__profile-img" className="comments__profile-img" type="image" name="image"
                         src={profile} alt="Mohan muruge side profile picture" />
                 </label>
                 <div className="comments__container">
-                    <label for="comments__input-message" className="comments__input-label">JOIN THE CONVERSATION
+                    <label htmlFor="comments__input-message" className="comments__input-label">JOIN THE CONVERSATION
                         <input className="comments__input-message" type="text" placeholder="Add a new comment" name="comment"></input></label>
                     <button className='comments__button' type='button'>
                         <img className='comments__add-img' src={add} alt='add comment icon' />

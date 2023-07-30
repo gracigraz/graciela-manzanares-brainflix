@@ -7,6 +7,13 @@
     color: $primary-brainFlix-black;
     background-color: $primary-brainFlix-white;
     padding: 0 1rem 1rem 1rem;
+    @include tablet{
+        padding: 0 2.5rem;
+    }
+    @include desktop{
+        padding: 1rem 2.5rem 0 8rem;
+        width: 52%;
+    }
 
     &__counter{
         @include font-subheader;
@@ -35,6 +42,13 @@
         padding-bottom: 1rem;
         width: 100%;
         margin-top: .875rem; 
+        @include tablet{
+            padding-bottom: 0.25rem;
+        }
+        @include desktop{
+            margin-left: 0.75rem;
+            
+        }
     }
     &__profile-img{
         border-radius: 50%;
@@ -45,12 +59,34 @@
         object-fit: cover;
         flex-shrink: 0;
         margin: 1.5rem 1rem 1rem 0rem;
+        @include tablet{
+            height: 5.2vw;
+            max-height: 5.2vw;
+            max-width: 5.2vw;
+            width: 5.2vw;
+        }
+        @include desktop{
+            height: 3.125vw;
+            width: 3.125vw;
+            max-width:3.125vw;
+            max-height: 3.125vw;
+            margin-right:2.375rem;
+        }
 
     }
     &__container{
         display: flex;
         flex-direction: column;
         width: 100%;
+        @include tablet{
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        @include desktop{
+            justify-content: space-between;
+       
+        }
     }
     &__input-label{
         display: flex;
@@ -58,6 +94,13 @@
         color: $primary-brainFlix-silver;
         width: 100%;
         @include font-button-label;
+        @include tablet{
+            width: 72%;
+        }
+        @include desktop{
+            width: 70%;
+        }
+        
       
 
     }
@@ -72,10 +115,26 @@
         border-radius: 0.25rem;
         padding: 0.25rem 0.75rem;
         margin: 0.25rem 0;
-        ::placeholder{
-            color: $primary-brainFlix-black;
+        @include tablet{
+            height: 5.2vw;
+            min-height: 5.2vw;
+            padding: 0 0.75rem;
         }
-        :focus {
+        @include desktop{
+            height: 3.125vw;
+            min-height: 3.125vw;
+        }
+       
+        &::placeholder{
+            color: $primary-brainFlix-black;
+            text-align: left;
+            vertical-align: top;
+            line-height: 1;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+        }
+        &:focus {
             outline: none;
         }
 
@@ -83,21 +142,30 @@
     }
     &__button{
         position: relative;
-        margin-top: .875rem;
+        margin-top: .75rem;
         background-color: $primary-brainFlix-blue;
-        border: .0625rem solid $secondary-mercury;
         border-radius: 0.25rem;
         border: none;
         color: $primary-brainFlix-white;
         width: 100%;
         padding: .5rem;
         max-height: 12.500vw;
+        text-align: center;
         @include font-button-label;
         @include tablet{
             @include font-button-label-dt;
+            width: 25%;
+            height: 5.2vw;
+            min-height: 5.2vw;
+            margin: 0 0 0.275rem 1rem;
+            padding: 0.625rem .5rem;
 
         }
         @include desktop{
+            height: 3.125vw;
+            min-height: 3.125vw;
+            margin: 0 0 0.275rem 0 ;
+            width: 25.5%;
 
         }
         &:hover {
@@ -120,7 +188,10 @@
         height: 1.2rem;
         margin-right: .3125rem;
         position: absolute; 
-        left: .3125rem;
+        left: .625rem;
+        @include tablet {
+            left: 0.5rem;
+        }
     }
 
     &__card{
@@ -128,7 +199,9 @@
         flex-direction: row;
         border-top: .0625rem solid $secondary-mercury;
         padding-top: 0.875rem;
-
+        @include desktop{
+            margin-left: 0.75rem;
+        }
     }
     &__avatar {
         border-radius: 50%;
@@ -142,17 +215,26 @@
         background-color: $secondary-mercury;
         flex-shrink: 0;
         @include tablet {
-            max-height: 5.5vh;
-            height: 5.5vh;
-            max-width: 5.5vh;
-            width: 5.5vh;
+            height: 5.2vw;
+            max-height: 5.2vw;
+            max-width: 5.2vw;
+            width: 5.2vw;
+            // max-height: 5.5vh;
+            // height: 5.5vh;
+            // max-width: 5.5vh;
+            // width: 5.5vh;
         }
 
         @include desktop {
-            max-height: 5.25vh;
-            height: 5.25vh;
-            max-width: 5.25vh;
-            width: 5.25vh;
+            // max-height: 5.25vh;
+            // height: 5.25vh;
+            // max-width: 5.25vh;
+            // width: 5.25vh;
+            height: 3.125vw;
+            width: 3.125vw;
+            max-width:3.125vw;
+            max-height: 3.125vw;
+            margin-right:2.375rem;
         }
 
     }
