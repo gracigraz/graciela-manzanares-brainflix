@@ -37,8 +37,8 @@ function Comments({ selectedVideo }) {
                 </div>
             </form>
             {/* Rendering the comments per video */}
-            {commentsDetails.map((commentDetails, index) => (
-                <article key={index} className="comments__card">
+            {commentsDetails.map((commentDetails, id) => (
+                <article key={id} className="comments__card">
                     <div className="comments__avatar"></div>
                     <div className="comments__body">
                         <div className="comments__header">
