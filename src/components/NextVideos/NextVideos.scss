@@ -10,6 +10,7 @@
     }
     @include desktop{
         padding: 1rem 2.5rem 1rem 8rem;
+        width: 48%;
     }
     
     &__heading{
@@ -50,7 +51,7 @@
      
         }
         @include desktop {
-            width: 36%;
+            width: 17%;
       
         } 
 
@@ -66,7 +67,7 @@
      
         }
         @include desktop {
-            width: 36%;
+            width: 38%;
       
         } 
 
