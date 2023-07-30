@@ -7,7 +7,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+        @include desktop {
+            align-items: flex-start;
+        }
     
     &__div{
         background-color: $secondary-brainFlix-darkBlack;
@@ -34,6 +36,13 @@
         flex-direction: column;
         justify-content: center;
         color: $primary-brainFlix-black;
+        @include tablet{
+            padding: 1rem 2.5rem;
+        }
+        @include desktop{
+            padding: 1rem 2.5rem 1rem 8rem;
+            width: 52%;
+        }
 
     }
     &__title{
@@ -67,6 +76,7 @@
         @include desktop{
             border-top: none;
             padding-top: 0; 
+            padding-bottom: 0.5rem; 
         }
 
     }
@@ -116,7 +126,7 @@
 
         }
         @include desktop{
-            @include font-body-copy-dt;
+
             
         }
         
@@ -129,14 +139,12 @@
         
         @include tablet{
             @include font-subheader-dt;
-            margin-right: 1rem;
+            margin-right: 2rem;
             margin-bottom: 0rem;
 
         }
         @include desktop{
-            @include font-subheader-dt;
             margin-right: 1rem;
-            margin-bottom: 0rem;
             
         }
 
@@ -157,15 +165,12 @@
             @include font-body-copy-dt;
             margin-bottom: 0rem;
             // background-size: 30%;
-            text-indent: 2.5rem;
-
+            text-indent: 1.75rem;
         }
         @include desktop{
             @include font-body-copy-dt;
-            margin-bottom: 0rem;
-            // background-size: 30%;
-            text-indent: 4rem;
-            
+            // background-size: 30%; 
+         
         }
 
     }
@@ -181,16 +186,14 @@
         margin-block-end: 0;
         @include tablet{
             @include font-body-copy-dt;
-            margin-left: 4rem;
+            margin-left: 1.5rem;
             // background-size: 29%;
-            text-indent: 2rem;
+            text-indent: 1.5rem;
 
         }
         @include desktop{
-            @include font-body-copy-dt;
-            margin-left: 2rem;
+            margin-left: 1.375rem;
             // background-size: 27%;
-            text-indent: 4rem;
             
         }
 
@@ -202,7 +205,10 @@
 
         }
         @include desktop{
-            @include font-body-copy-dt;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin: 1.25rem 0;
+
             
         }
 
