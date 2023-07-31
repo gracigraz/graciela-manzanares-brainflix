@@ -1,7 +1,7 @@
 import './NextVideos.scss';
 import NextVideo from '../NextVideo/NextVideo';
 
- //accept videos (filtered) and array selectVideo function
+ //accept videos (filtered) and array handleSelectVideo function
 function NextVideos({filteredVideos, handleSelectVideo}) {
 
     return (
@@ -10,27 +10,16 @@ function NextVideos({filteredVideos, handleSelectVideo}) {
                 {/* map video array to nextvideo item: pass in key, video title, channel, image, and selectVideo() */}
                 {
                     filteredVideos.map((video)=>(
-                        <NextVideo
+                        <NextVideo 
                             key={video.id}
                             id={video.id}
                             title={video.title}
                             channel={video.channel}
                             image={video.image}
                             handleSelectedVideo={handleSelectVideo} />
-
                     ))
                 }
             </nav>
-
-                // <div className="next-videos__item">
-                //     <img className="next-videos__thumbnail"
-                //     src="https://i.imgur.com/MMDMgD7.jpg"
-                //     alt={'Thumbnail of Les Houches The Hidden Gem Of The Chamonix'} />
-                //     <div className="next-videos__body">
-                //         <p className="next-videos__video-title">Les Houches The Hidden Gem Of The Chamonix</p>
-                //         <p className="next-videos__channel">Cornelia Blair</p>
-                //     </div>
-                // </div>
             
     )
 }

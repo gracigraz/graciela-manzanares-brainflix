@@ -28,7 +28,7 @@ function Main() {
     return (
       <main className= 'video-page'>
         <HeroVideoDetails selectedVideo = {selectedVideo}/> 
-        <Comments />
+        <Comments selectedVideo = {selectedVideo} />
         <NextVideos  filteredVideos = {filteredVideos} handleSelectVideo={handleSelectVideo}/> 
       </main>
     );

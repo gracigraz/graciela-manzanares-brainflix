@@ -48,7 +48,7 @@ function Comments({ selectedVideo }) {
                         <p className="comments__comment">{commentDetails.comment}</p>
                     </div>
                 </article>
-            ))};
+            ))}
         </section >
     )
 }
