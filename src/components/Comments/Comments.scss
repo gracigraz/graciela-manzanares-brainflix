@@ -11,7 +11,7 @@
         padding: 0 2.35rem;
     }
     @include desktop{
-        padding: 1rem 0rem 0 8rem;//2.5 right
+        padding: 1rem 0rem 0 8rem;
     }
 
     &__counter{
@@ -32,12 +32,11 @@
         }
     }
 
-   
     &__form{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: flex-start; //center
+        justify-content: flex-start; 
         padding-bottom: 1rem;
         width: 100%;
         margin-top: .875rem; 
@@ -85,7 +84,6 @@
         @include desktop{
             justify-content: space-between;
             width: 83.5%;
-       
         }
     }
     &__input-label{
@@ -100,8 +98,6 @@
         @include desktop{
             width: 70%;
         }
-        
-      
 
     }
     &__input-message{
@@ -124,7 +120,6 @@
             height: 3.125vw;
             min-height: 3.125vw;
         }
-       
         &::placeholder{
             color: $primary-brainFlix-black;
             text-align: left;
@@ -137,8 +132,6 @@
         &:focus {
             outline: none;
         }
-
-
     }
     &__button{
         position: relative;
@@ -290,10 +283,7 @@
         @include desktop {
             padding-right: 1.5rem;
             margin-block-start: 0;
-   
         }
-        
-
     }
 }
 

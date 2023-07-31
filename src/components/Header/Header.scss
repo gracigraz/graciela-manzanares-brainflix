@@ -83,25 +83,21 @@
         background-image: url('../../assets/images/search.svg');
         background-position: 4% center;
         background-repeat: no-repeat;
-        // background-size: 6.5%;
         text-indent: 10%;
         @include tablet {
             padding: .6rem .625rem;
             background-position: 6% center;
-            // background-size: 7.375%;
             text-indent: 13%;
         }
         @include desktop {
             background-position: 8% center;
             padding: .6rem .625rem;
-            // background-size: 7.75%;
             text-indent: 15%;
         }
         
         ::placeholder{
             color: $primary-brainFlix-black;
         }
-        
     }
 
     &__search-bar-dt{
@@ -112,7 +108,6 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-        
         }
 
         @include desktop {
@@ -147,7 +142,6 @@
             object-fit: cover;
             display: block;
             margin-right: 1.4rem;
-
         }
     
         @include desktop {
@@ -174,7 +168,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-      
 
         @include tablet {
             margin: 0 ;
@@ -207,6 +200,5 @@
         position: absolute; 
         left: .3125rem;
     }
-    
 }
 
