@@ -1,0 +1,63 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography';
+
+.next-video{
+    &__thumbnail{
+        width: 36%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: .25rem;
+        border: none;
+        background-color: $secondary-mercury;
+        @include tablet {
+            width: 16%;
+        }
+        @include desktop {
+            width: 27%;
+        } 
+
+    }
+    &__body{
+        color: $primary-brainFlix-black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0.875rem;
+        @include tablet {
+            width: 26.5%;
+    
+        }
+        @include desktop {
+            width: 44%;
+    
+        } 
+
+    }
+    &__title{
+        @include font-body-copy;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-weight: 700;
+        @include tablet {
+            @include font-body-copy-dt;
+            font-weight: 700;
+        }
+        @include desktop {
+            
+        }
+
+    }
+    &__channel{
+        @include font-body-copy;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        @include tablet {
+            @include font-body-copy-dt;
+        }
+        @include desktop {
+            
+        }
+
+    }
+}

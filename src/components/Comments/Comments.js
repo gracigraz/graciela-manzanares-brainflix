@@ -18,9 +18,10 @@ function Comments({ selectedVideo }) {
         };
     });
 
+
     return (
         <section className='comments'>
-            <span className="comments__counter">{selectedVideo.comments.lenght} Comments</span>
+            <span className="comments__counter">{selectedVideo.comments.length} Comments</span>
             <form id="comments__form" className="comments__form">
                 <label htmlFor="comments__profile-img">
                     <input id="comments__profile-img" className="comments__profile-img" type="image" name="image"

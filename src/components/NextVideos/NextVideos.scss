@@ -9,8 +9,8 @@
         padding: 1rem 2.35rem;
     }
     @include desktop{
-        padding: 1rem 2.5rem 1rem 8rem;
-        width: 48%;
+        padding-left: 1.5rem;
+        width: 107%;
     }
     
     &__heading{
@@ -23,82 +23,24 @@
         @include font-button-label;
         @include tablet {
             @include font-button-label-dt;
-     
         }
         @include desktop {
-            @include font-button-label-dt;
-      
-        } 
-      
-    }
-    &__item{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding-bottom: 1rem;
-
-    }
-    &__thumbnail{
-        width: 36%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        // height: auto;
-        border-radius: .25rem;
-        border: none;
-        background-color: $secondary-mercury;
-        @include tablet {
-            width: 16%;
-     
-        }
-        @include desktop {
-            width: 17%;
-      
-        } 
-
-    }
-    &__body{
-        color: $primary-brainFlix-black;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-left: 0.875rem;
-        @include tablet {
-            width: 28%;
-     
-        }
-        @include desktop {
-            width: 38%;
-      
-        } 
-
-    }
-    &__video-title{
-        @include font-body-copy;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        font-weight: 700;
-        @include tablet {
-            @include font-body-copy-dt;
-            font-weight: 700;
-        }
-        @include desktop {
-            @include font-body-copy-dt;
-            font-weight: 700;
-        }
-
-    }
-    &__channel{
-        @include font-body-copy;
-        margin-block-end: 0;
-        margin-block-start: 0;
-        @include tablet {
-            @include font-body-copy-dt;
-        }
-        @include desktop {
-            @include font-body-copy-dt;
+            border-top: none;
             
-        }
-
-
+        } 
     }
+}
+.next-video{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 1rem;
+    @include tablet {
+        padding-bottom: 1.5rem;
+        
+    } 
+    @include desktop {
+        padding-bottom: 1.5rem;
+        
+    } 
 }
