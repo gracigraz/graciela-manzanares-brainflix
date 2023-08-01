@@ -4,28 +4,33 @@ function Upload() {
 
     return (
         <section className="upload" >
-            <h2 className="upload__heading">Upload Video</h2>
+            <h1 className="upload__heading">Upload Video</h1>
             <form id="upload__form" className="upload__form">
-                <label htmlFor="upload__thumbnail">
-                    <input id="upload__thumbnail" className="upload__thumbnail" type="image" name="image"
-                        src="./assets/images/Mohan-muruge.jpg" alt="Mohan muruge side profile picture" />
-                </label>
-                <div class="upload__container">
-                    <label htmlFor="upload__input-name" className="upload__label-name">
-                    TITLE YOUR VIDEO
-                        <input id="upload__input-name" className="upload__input-name" name="fullName" type="text"
-                            placeholder="Add a title to your video" required>
+                <div className='upload__container'>
+                    <label htmlFor="upload__thumbnail" className="upload__thumbnail-label">
+                        VIDEO THUMBNAIL
+                        <input id="upload__thumbnail" className="upload__thumbnail" type="image" name="image"
+                            src="./assets/images/Mohan-muruge.jpg" alt="Mohan muruge side profile picture" />
                     </label>
-                    <label htmlFor="upload__input-comment" className="upload__label-comment">
-                    ADD A VIDEO DESCRIPTION
-                        <input id="upload__input-comment" class="upload__input-comment" name="message"
-                            type="text" placeholder="Add a description to your video">
-                    </label>
-                    <button type="button" class="upload__cancel-button">COMMENT</button>
+                    <div class="upload__text-container">
+                        <label htmlFor="upload__input-title" className="upload__label-title">
+                            TITLE YOUR VIDEO
+                            <input id="upload__input-title" className="upload__input-title" name="title" type="text"
+                                placeholder="Add a title to your video" required />
+                        </label>
+                        <label htmlFor="upload__label-description" className="upload__label-description">
+                            ADD A VIDEO DESCRIPTION
+                            <input id="upload__input-description" class="upload__input-description" name="description"
+                                type="text" placeholder="Add a description to your video" />
+                        </label>
+                    </div>
+                </div>
+                <div className='upload__buttons'>
                     <button className='upload__publish-button' type="submit">
-                        <img className='upload__publish-icon' src={add} alt='publish icon' />
+                        <img className='upload__publish-icon' src="{add}" alt='publish icon' />
                         <span>PUBLISH</span>
                     </button>
+                    <button type="button" class="upload__cancel-button">CANCEL</button>
                 </div>
             </form>
         </section>

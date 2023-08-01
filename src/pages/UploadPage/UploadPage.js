@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+import Upload from "../../components/Upload/Upload";
+
 function UploadPage() {
     return (
       <>
-        <h1>Home Page</h1>
+      <Upload/>
+        {/* <h1>Upload Page</h1>
         <p>
         Welcome, <strong></strong>! We hope you find what you're
         looking for.
-      </p>
+      </p> */}
       </>
     );
   }

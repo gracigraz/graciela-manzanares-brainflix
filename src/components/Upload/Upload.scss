@@ -1,0 +1,92 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography';
+
+
+.upload{
+    background-color: $primary-brainFlix-white;
+    border-top: .0625rem solid $secondary-mercury;
+    &__heading{
+        color: $primary-brainFlix-black;
+        @include font-page-header;
+
+        @include tablet{
+            @include font-page-header-dt;
+
+        }
+        @include desktop{
+
+        }
+    }
+    &__form{
+        border-top: .0625rem solid $secondary-mercury;
+        border-bottom: .0625rem solid $secondary-mercury;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include desktop{
+            flex-direction: row;
+
+        }   
+
+    }
+    &__thumbnail-label{
+        color: $primary-brainFlix-silver;
+
+    }
+    &__thumbnail{
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: .25rem;
+    }
+
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__label-title{
+        color: $primary-brainFlix-silver;
+
+    }
+    &__input-title{
+        background-color: $secondary-alabaster;
+    }
+    &__label-description{
+        color: $primary-brainFlix-silver;
+
+    }
+    &__input-description{
+        background-color: $secondary-alabaster;
+
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+
+        @include tablet{
+            flex-direction: row;
+        }
+
+    }
+    
+    &__publish-button{
+        background-color: $primary-brainFlix-blue;
+        color: $primary-brainFlix-white;
+        
+        &:nth-child(1) { order: 1; }
+    }
+    &__publish-icon{
+
+    }
+    &__cancel-button{
+        color: $primary-brainFlix-blue;
+        &:nth-child(2) { order: 2; }
+    }
+}
