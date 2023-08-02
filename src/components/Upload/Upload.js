@@ -1,4 +1,5 @@
 import './Upload.scss';
+import publish from '../../assets/images/publish.svg';
 
 function Upload() {
 
@@ -27,7 +28,7 @@ function Upload() {
                 </div>
                 <div className='upload__buttons'>
                     <button className='upload__publish-button' type="submit">
-                        <img className='upload__publish-icon' src="{add}" alt='publish icon' />
+                        <img className='upload__publish-icon' src={publish} alt='publish icon' />
                         <span>PUBLISH</span>
                     </button>
                     <button type="button" class="upload__cancel-button">CANCEL</button>

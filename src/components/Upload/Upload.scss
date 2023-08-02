@@ -6,6 +6,12 @@
 .upload{
     background-color: $primary-brainFlix-white;
     border-top: .0625rem solid $secondary-mercury;
+    @include tablet{
+        padding: 1rem 2rem 1rem 2.2rem;
+    }
+    @include desktop{
+        padding: 1rem 8rem 1rem 8.25rem;
+    }
     &__heading{
         color: $primary-brainFlix-black;
         @include font-page-header;
@@ -19,8 +25,14 @@
         }
     }
     &__form{
-        border-top: .0625rem solid $secondary-mercury;
-        border-bottom: .0625rem solid $secondary-mercury;
+        @include tablet{
+            border-top: .0625rem solid $secondary-mercury;
+            border-bottom: .0625rem solid $secondary-mercury;
+        }
+        @include desktop{
+
+        }
+        
     }
     &__container{
         display: flex;
@@ -36,6 +48,13 @@
     }
     &__thumbnail-label{
         color: $primary-brainFlix-silver;
+        @include font-button-label;
+        @include tablet{
+            @include font-button-label-dt;
+        }
+        @include desktop{
+            
+        }
 
     }
     &__thumbnail{
@@ -50,20 +69,47 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 100%;
     }
     &__label-title{
         color: $primary-brainFlix-silver;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        @include font-button-label;
+        @include tablet{
+            @include font-button-label-dt;
+        }
+        @include desktop{
+            
+        }
 
     }
     &__input-title{
         background-color: $secondary-alabaster;
+        border: .0625rem solid $secondary-mercury;
     }
     &__label-description{
         color: $primary-brainFlix-silver;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        @include font-button-label;
+        @include tablet{
+            @include font-button-label-dt;
+        }
+        @include desktop{
+            
+        }
 
     }
     &__input-description{
         background-color: $secondary-alabaster;
+        border: .0625rem solid $secondary-mercury;
 
     }
     &__buttons{
@@ -72,6 +118,7 @@
 
         @include tablet{
             flex-direction: row;
+            justify-content: flex-end;
         }
 
     }
@@ -79,14 +126,34 @@
     &__publish-button{
         background-color: $primary-brainFlix-blue;
         color: $primary-brainFlix-white;
+        border-radius: .25rem;
+        width: 100%;
+        @include font-button-label;
+        @include tablet{
+            &:nth-child(1) { order: 2; }
+            width: 17%;
+            @include font-button-label-dt;
+        }
+        @include desktop{
+            width: 12%;
+        }
         
-        &:nth-child(1) { order: 1; }
+        
     }
     &__publish-icon{
 
     }
     &__cancel-button{
+        border: none;
+        background-color: $primary-brainFlix-white;
         color: $primary-brainFlix-blue;
-        &:nth-child(2) { order: 2; }
+        @include font-button-label;
+        @include tablet{
+            @include font-button-label-dt;
+            &:nth-child(2) { order: 1; }
+        }
+        @include desktop{
+            
+        }
     }
 }
