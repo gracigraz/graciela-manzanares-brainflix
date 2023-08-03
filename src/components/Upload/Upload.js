@@ -1,5 +1,6 @@
 import './Upload.scss';
 import publish from '../../assets/images/publish.svg';
+import vid from '../../assets/images/Mohan-muruge.jpg';
 
 function Upload() {
 
@@ -11,7 +12,7 @@ function Upload() {
                     <label htmlFor="upload__thumbnail" className="upload__thumbnail-label">
                         VIDEO THUMBNAIL
                         <input id="upload__thumbnail" className="upload__thumbnail" type="image" name="image"
-                            src="./assets/images/Mohan-muruge.jpg" alt="Mohan muruge side profile picture" />
+                            src={vid} alt='Thumbnail of video' />
                     </label>
                     <div class="upload__text-container">
                         <label htmlFor="upload__input-title" className="upload__label-title">
@@ -31,7 +32,7 @@ function Upload() {
                         <img className='upload__publish-icon' src={publish} alt='publish icon' />
                         <span>PUBLISH</span>
                     </button>
-                    <button type="button" class="upload__cancel-button">CANCEL</button>
+                    <button type="button" className="upload__cancel-button">CANCEL</button>
                 </div>
             </form>
         </section>

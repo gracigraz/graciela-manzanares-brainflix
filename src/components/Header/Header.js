@@ -2,12 +2,13 @@ import './Header.scss';
 import logo from '../../assets/images/BrainFlix-logo.svg';
 import profile from '../../assets/images/Mohan-muruge.jpg';
 import upload from '../../assets/images/upload.svg';
+import {Link, link} from 'react-router-dom';
 
 function Header() {
     return (
         <>
             <header className="header">
-                <img className="header__logo" src={logo} alt="Logo" />
+                <Link to="/"><img className="header__logo" src={logo} alt="Logo"  /></Link>
                 <div className='header__div--mobile'>
                     <div className='header__search-bar' id='searchWrapper'>
                         <input className='header__search-input' type='text' placeholder="Search" name="searchWrapper"></input>

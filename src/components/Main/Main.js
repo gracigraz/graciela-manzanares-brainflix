@@ -1,5 +1,6 @@
 import HeroVideoDetails from '../HeroVideoDetails/HeroVideoDetails';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import videoDetailsData from '../../data/video-details.json';
 import videos from '../../data/videos.json'
 import NextVideos from '../NextVideos/NextVideos';
