@@ -1,15 +1,28 @@
-import HeroVideoDetails from '../HeroVideoDetails/HeroVideoDetails';
+// import Main from '../../components/Main/Main';
+
+
+// function VideoPlayerPage() {
+//     return (
+//       <>
+//         <Main />
+//       </>
+//     );
+//   }
+//   export default VideoPlayerPage;
+
+
+import HeroVideoDetails from '../../components/HeroVideoDetails/HeroVideoDetails';
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
 import axios from 'axios';
 import videoDetailsData from '../../data/video-details.json';
 import videos from '../../data/videos.json'
-import NextVideos from '../NextVideos/NextVideos';
-import Comments from '../Comments/Comments';
-import HeroVideo from '../HeroVideo/HeroVideo';
-import './Main.scss';
+import NextVideos from '../../components/NextVideos/NextVideos';
+import Comments from '../../components/Comments/Comments';
+import HeroVideo from '../../components/HeroVideo/HeroVideo';
+import './VideoPlayerPage.scss';
 
-function Main() {
+function VideoPlayerPage() {
     
 
 
@@ -17,7 +30,7 @@ function Main() {
     const [selectedVideo, setSelectedVideo] = useState(videoDetailsData[0]);
 
 
-    //figuring out which ID we want to display -plantIDToDisplay
+    //figuring out which ID we want to display -plantIDToDisplay w turnary
 
     //function to call when a nav thumbnail image is clicked
 
@@ -49,4 +62,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default VideoPlayerPage;
