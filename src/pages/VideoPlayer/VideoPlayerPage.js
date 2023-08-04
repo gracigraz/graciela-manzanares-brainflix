@@ -1,11 +1,11 @@
 import Main from '../../components/Main/Main';
-import { Link } from "react-router-dom";
 
-function HomePage() {
+
+function VideoPlayerPage() {
     return (
       <>
         <Main />
       </>
     );
   }
-  export default HomePage;
+  export default VideoPlayerPage;

@@ -14,7 +14,7 @@ function Upload() {
                         <input id="upload__thumbnail" className="upload__thumbnail" type="image" name="image"
                             src={vid} alt='Thumbnail of video' />
                     </label>
-                    <div class="upload__text-container">
+                    <div className="upload__text-container">
                         <label htmlFor="upload__input-title" className="upload__label-title">
                             TITLE YOUR VIDEO
                             <input id="upload__input-title" className="upload__input-title" name="title" type="text"
@@ -22,7 +22,7 @@ function Upload() {
                         </label>
                         <label htmlFor="upload__label-description" className="upload__label-description">
                             ADD A VIDEO DESCRIPTION
-                            <input id="upload__input-description" class="upload__input-description" name="description"
+                            <input id="upload__input-description" className="upload__input-description" name="description"
                                 type="text" placeholder="Add a description to your video" />
                         </label>
                     </div>

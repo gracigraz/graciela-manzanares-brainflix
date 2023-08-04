@@ -6,6 +6,7 @@
 .upload{
     background-color: $primary-brainFlix-white;
     border-top: .0625rem solid $secondary-mercury;
+    padding: 1rem;
     @include tablet{
         padding: 1rem 2rem 1rem 2.2rem;
     }
@@ -14,6 +15,8 @@
     }
     &__heading{
         color: $primary-brainFlix-black;
+        margin-block-start: 0;
+        margin-block-end: 0;
         @include font-page-header;
 
         @include tablet{
@@ -52,6 +55,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        margin-top: 1rem;
         @include font-button-label;
         @include tablet{
             @include font-button-label-dt;
@@ -88,6 +92,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
+        margin-top: 1rem;
         @include font-button-label;
         @include tablet{
             @include font-button-label-dt;
@@ -109,6 +114,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
+        margin-top: 1rem;
         @include font-button-label;
         @include tablet{
             @include font-button-label-dt;
@@ -122,14 +128,14 @@
         background-color: $secondary-alabaster;
         border: .0625rem solid $secondary-mercury;
         width: 99%;
-        height: 10vh;
-     
+        height: 12.5vh;
 
 
     }
     &__buttons{
         display: flex;
         flex-direction: column;
+        margin: .5rem 0;
 
         @include tablet{
             flex-direction: row;
@@ -150,6 +156,7 @@
         border: none;
         width: 100%;
         position: relative;
+        margin-top: 1rem;
         padding: 0.625rem 0.5rem;
         @include font-button-label;
         @include tablet{
@@ -172,6 +179,8 @@
         border: none;
         background-color: $primary-brainFlix-white;
         color: $primary-brainFlix-blue;
+        margin-top: 1rem;
+        padding: 0.625rem 0.5rem;
         @include font-button-label;
         @include tablet{
             @include font-button-label-dt;

@@ -1,5 +1,6 @@
 import HeroVideoDetails from '../HeroVideoDetails/HeroVideoDetails';
 import { useState, useEffect } from 'react';
+import {useParams} from 'react-router-dom';
 import axios from 'axios';
 import videoDetailsData from '../../data/video-details.json';
 import videos from '../../data/videos.json'
@@ -9,12 +10,18 @@ import HeroVideo from '../HeroVideo/HeroVideo';
 import './Main.scss';
 
 function Main() {
+    
+
 
     //create selectedVideo state variable - initialize to videoDetailsData[0] 1st video in video-details.json
     const [selectedVideo, setSelectedVideo] = useState(videoDetailsData[0]);
 
+
+    //figuring out which ID we want to display -plantIDToDisplay
+
     //function to call when a nav thumbnail image is clicked
 
+    //get rid of handleselectedvideo bc now we dont use a button we use the url
     function handleSelectVideo(videoId) {
         //find correct video in our HeroVideoDetails
         const foundVideo = videoDetailsData.find((video) => {
