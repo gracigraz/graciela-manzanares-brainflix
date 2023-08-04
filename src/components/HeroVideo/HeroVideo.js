@@ -2,12 +2,12 @@
 import './HeroVideo.scss';
 
 //accept selectedVideo
-function HeroVideo({selectedVideo}) {
+function HeroVideo({image}) {
 
 
     return (
             <div className='hero-video'>
-                <video className='hero-video__poster' poster={selectedVideo.image} controls>
+                <video className='hero-video__poster' poster={image} controls>
                 </video>
             </div>
         )

@@ -1,8 +1,8 @@
 import './NextVideos.scss';
 import NextVideo from '../NextVideo/NextVideo';
 
- //accept videos (filtered) and array handleSelectVideo function
-function NextVideos({filteredVideos, handleSelectVideo}) {
+ //accept videos (filtered) 
+function NextVideos({filteredVideos}) {
 
     return (
             <nav className="next-videos">
@@ -15,8 +15,7 @@ function NextVideos({filteredVideos, handleSelectVideo}) {
                             id={video.id}
                             title={video.title}
                             channel={video.channel}
-                            image={video.image}
-                            handleSelectedVideo={handleSelectVideo} />
+                            image={video.image} />
                     ))
                 }
             </nav>

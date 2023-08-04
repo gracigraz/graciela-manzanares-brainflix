@@ -8,7 +8,9 @@ function Header() {
     return (
         <>
             <header className="header"> 
-                <Link className="" to="/home"><img className="header__logo" src={logo} alt="Logo" /></Link>
+                <Link className="" to="/">
+                    <img className="header__logo" src={logo} alt="Logo" />
+                </Link>
                 <div className='header__div--mobile'>
                     <div className='header__search-bar' id='searchWrapper'>
                         <input className='header__search-input' type='text' placeholder="Search" name="searchWrapper"></input>
