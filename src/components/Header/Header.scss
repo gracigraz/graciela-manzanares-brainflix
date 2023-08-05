@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: $primary-brainFlix-white;
+    border-bottom: .0625rem solid $secondary-mercury;
 
     @include tablet {
         flex-direction: row;
@@ -208,7 +209,6 @@
 }
 
 a{
-    display: inline-block;
     color: inherit;
     text-decoration: none;
 

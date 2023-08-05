@@ -34,7 +34,7 @@ function UploadPage() {
       <div className='upload__buttons'>
         <Link to="/"><button className='upload__publish-button' type="submit" onClick={sendAlert}>
           <img className='upload__publish-icon' src={publish} alt='publish icon' />
-          <span>PUBLISH</span>
+          PUBLISH
         </button></Link>
         <button type="button" className="upload__cancel-button">CANCEL</button>
       </div>
