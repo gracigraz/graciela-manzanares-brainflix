@@ -123,11 +123,10 @@
         &::placeholder{
             color: $primary-brainFlix-black;
             text-align: left;
-            vertical-align: top;
-            line-height: 1;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 0;
+            position: absolute;
+            top:  .75rem;
+            left: .75rem;
+            padding: 0.25rem
         }
         &:focus {
             outline: none;
