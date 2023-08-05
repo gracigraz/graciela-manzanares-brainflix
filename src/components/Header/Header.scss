@@ -3,7 +3,7 @@
 @use '../../styles/partials/typography';
 
 .header{
-    padding: 0.75rem 1rem 1rem 1rem;
+    padding: 0rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,22 +15,49 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 1rem 2.35rem;
     }
     @include desktop { 
     }
+    &__nav{
+        width: 100%;
+        text-align: center;
+        @include tablet{
+            text-align: left;
+           
+        }
+
+    }
+    &__nav-list{
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+
+        @include tablet{
+            display: flex;
+            align-items: center
+           
+        }
+       
+
+    }
+    &__nav-item{  
+         
+        
+    }
 
     &__logo{
-        width: 38%;
+        margin-top: 1rem;   
         max-height: 7.813vw;
         max-width: 37.500vw;
 
         @include tablet {
-            width: 14.25%;
-            margin-left: 1.2rem;
-            margin-right: 5.5rem;
+            // margin-left: 1.2rem;
+            // margin-right: 5.5rem;
             max-height: 5.2vw;
             max-width: 15.625vw;
+            margin-top: 0rem; 
 
         }
         @include desktop {
@@ -42,36 +69,35 @@
         }
     }
 
-    &__div--mobile{
+    &__div-mobile{
         width: 100%;
-        max-height: 11.5vw;
+        max-height: 11vw;
         display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        @include tablet {
-            display: none;
+        margin-top: .75rem; 
+        @include tablet { 
+        margin-top: 0;
+        justify-content: flex-end
         }
-
-        @include desktop {
-            display: none;
-        }
-
+        
     }
     &__search-bar{
-        width: 90%;
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        margin-right: 1rem;
         color: $primary-brainFlix-black;
-        
         &::placeholder{
             color: $primary-brainFlix-black;
-            border-color: red;
-        
-          
         }
         &:focus {
             outline: none;
+        }
+        @include tablet {
+            width: 69%;
+            justify-content: flex-end; 
+            align-items: center;
+        }
+
+        @include desktop {
+            width: 19%;
         }
 
     }
@@ -82,12 +108,14 @@
         @include font-form-label;
         background-color: $secondary-alabaster;
         border: .0625rem solid $secondary-mercury;
-        color: $primary-brainFlix-black;
         border-radius: 0.25rem;
         background-image: url('../../assets/images/search.svg');
         background-position: 4% center;
         background-repeat: no-repeat;
         text-indent: 10%;
+        &::placeholder{
+            color: $primary-brainFlix-black;
+        }
         @include tablet {
             padding: .6rem .625rem;
             background-position: 6% center;
@@ -99,34 +127,32 @@
             text-indent: 15%;
         }
         
-        ::placeholder{
-            color: $primary-brainFlix-black;
-            border-color: red;;
-        }
+        
     }
 
     &__search-bar-dt{
         display: none;
-        @include tablet {
-            width: 32.5%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
+        // @include tablet {
+        //     width: 32.5%;
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: space-between;
+        //     align-items: center;
+        // }
 
-        @include desktop {
-            width: 19%;
-        }
+        // @include desktop {
+        //     width: 19%;
+        // }
     }
     &__avatar{
         border-radius: 50%;
-        height: 11.5vw;
-        max-width: 11.5vw;
-        max-height: 11.5vw;
-        width: 11.5vw;
+        height: 11vw;
+        max-width: 11vw;
+        max-height: 11vw;
+        width: 11vw;
         object-fit: cover;
         flex-shrink: 0;
+        margin-left: 1rem;
         @include tablet {
             display: none;
         }
@@ -146,7 +172,7 @@
             width: 5.2vw;
             object-fit: cover;
             display: block;
-            margin-right: 1.4rem;
+            margin-left: 1.375rem;
         }
     
         @include desktop {
@@ -155,14 +181,13 @@
             max-width:3.125vw;
             max-height: 3.125vw;
             margin-right: 8rem;
-
         }
     }     
         
     &__button{
+        margin-top: 1rem;   
         box-sizing: border-box;
         position: relative;
-        margin: 1rem 0 .25rem 0;
         background-color: $primary-brainFlix-blue;
         color: $primary-brainFlix-white;
         border-radius: 0.25rem;
@@ -179,30 +204,30 @@
         }
 
         @include tablet {
-            margin: 0 ;
-            width: 20.5%;
+            margin: 0;
+            width: 20.5vw;
             padding: .6rem;
-            @include font-button-label-dt
+            @include font-button-label-dt;
+            margin-left: 1.375rem;
         }
 
         @include desktop {
             width: 12%;
             margin-right: 0;
-            @include font-button-label-dt
+            @include font-button-label-dt;
         }
 
     }
-    &__button-content > span{
-        text-align: center;
-        @include font-button-label;
-        @include tablet {
-            @include font-button-label-dt
-        }
-        @include desktop {
-            @include font-button-label-dt
-        }
-
-    }
+    // &__button-content > span{
+    //     text-align: center;
+    //     @include font-button-label;
+    //     @include tablet {
+    //         @include font-button-label-dt
+    //     }
+    //     @include desktop {
+    //         @include font-button-label-dt
+    //     }
+    // }
     &__upload-img{
         height: 1.2rem;
         margin-right: .3125rem;
