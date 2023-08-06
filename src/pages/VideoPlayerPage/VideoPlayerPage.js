@@ -42,8 +42,7 @@ function VideoPlayerPage() {
 	}, [])
 
     useEffect(()=> {
-		//selectedVideoId can be null when we first load VideoPlayerPage until it gets the list
-	    // of videos from the API
+		//selectedVideoId can be null when we first load VideoPlayerPage until it gets the list of videos from the API
 		if(videoIdToDisplay === null) return
   
         const urlDetails = `https://project-2-api.herokuapp.com/videos/`+videoIdToDisplay+`?api_key=`+apiKey;
