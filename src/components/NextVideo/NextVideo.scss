@@ -5,13 +5,13 @@
 .next-video{
     &__thumbnail{
         width: 31.5vw;
-        aspect-ratio: 16/9;
+        aspect-ratio: 16/9.25;
         object-fit: cover;
         border-radius: .25rem;
         border: none;
         background-color: $secondary-mercury;
         @include tablet {
-            width: 16%;
+            width: 14.5vw;
         }
         @include desktop {
             width: 27%;
