@@ -24,8 +24,7 @@
         width: 100%;
         text-align: center;
         @include tablet{
-            text-align: left;
-           
+            text-align: left;   
         }
 
     }
@@ -40,8 +39,6 @@
             align-items: center
            
         }
-       
-
     }
     &__nav-item{  
          
@@ -110,6 +107,7 @@
         text-indent: 10%;
         &::placeholder{
             color: $primary-brainFlix-black;
+            font-family: "Avenir";
         }
         @include tablet {
             padding: .6rem .625rem;

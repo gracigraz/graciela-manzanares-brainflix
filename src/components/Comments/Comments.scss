@@ -18,8 +18,6 @@
         @include font-subheader;
         margin-block-start: 0;
         margin-block-end: 0;
-        
-        
         @include tablet{
             @include font-subheader-dt;
             margin-right: 2rem;
@@ -27,14 +25,12 @@
 
         }
         @include desktop{
-            margin-right: 1rem;
-            
+            margin-right: 1rem;  
         }
     }
 
     &__form{
         display: flex;
-        flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start; 
         padding-bottom: 1rem;
@@ -44,8 +40,7 @@
             padding-bottom: 0.25rem;
         }
         @include desktop{
-            margin-left: 0.75rem;
-            
+            margin-left: 0.75rem;  
         }
     }
     &__profile-img{
@@ -68,7 +63,7 @@
             width: 3.125vw;
             max-width:3.125vw;
             max-height: 3.125vw;
-            margin-right:2.375rem;
+            margin-right: 2.375rem;
         }
 
     }
@@ -82,7 +77,6 @@
             justify-content: space-between;
         }
         @include desktop{
-            justify-content: space-between;
             width: 83.5%;
         }
     }
@@ -93,6 +87,7 @@
         width: 100%;
         @include font-button-label;
         @include tablet{
+            @include font-button-label-dt;
             width: 72%;
         }
         @include desktop{
@@ -122,11 +117,11 @@
         }
         &::placeholder{
             color: $primary-brainFlix-black;
-            text-align: left;
             position: absolute;
-            top:  .75rem;
             left: .75rem;
-            padding: 0.25rem
+            top: .75rem;
+            padding: 0.25rem;
+            font-family: "Avenir";
         }
         &:focus {
             outline: none;
@@ -141,7 +136,7 @@
         color: $primary-brainFlix-white;
         width: 100%;
         padding: .5rem;
-        max-height: 12.500vw;
+        max-height: 12.5vw;
         text-align: center;
         @include font-button-label;
         @include tablet{

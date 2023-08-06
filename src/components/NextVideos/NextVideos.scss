@@ -9,8 +9,9 @@
         padding: 1rem 2.35rem;
     }
     @include desktop{
+        flex-shrink: 0;
         padding-left: 1.5rem;
-        width: 64.5%;
+        width: 30.8vw;
         border-left: .0625rem $secondary-mercury solid;
     }
     
@@ -35,6 +36,8 @@
 .next-video{
     display: flex;
     padding-bottom: 1rem;
+    align-items: stretch;
+    justify-content: flex-start;
     @include tablet {
         padding-bottom: 1.25rem;
         

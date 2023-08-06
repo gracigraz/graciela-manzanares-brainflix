@@ -14,7 +14,8 @@
             width: 14.5vw;
         }
         @include desktop {
-            width: 27%;
+            aspect-ratio: 16/9.5;
+            width: 8.5vw;
         } 
 
     }
@@ -29,7 +30,7 @@
     
         }
         @include desktop {
-            width: 44%;
+            width: 45%;
     
         } 
 
@@ -43,9 +44,6 @@
             @include font-body-copy-dt;
             font-weight: 700;
         }
-        @include desktop {
-            
-        }
 
     }
     &__channel{
@@ -55,9 +53,5 @@
         @include tablet {
             @include font-body-copy-dt;
         }
-        @include desktop {
-            
-        }
-
     }
 }
