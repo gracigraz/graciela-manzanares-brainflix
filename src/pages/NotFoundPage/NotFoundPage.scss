@@ -1,0 +1,9 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography';
+
+.not-found-page{
+    color: $primary-brainFlix-blue;
+    font-weight: 700;
+    text-align: center;
+}

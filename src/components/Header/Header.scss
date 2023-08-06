@@ -40,10 +40,6 @@
            
         }
     }
-    &__nav-item{  
-         
-        
-    }
 
     &__logo{
         margin-top: 1rem;   
@@ -109,6 +105,9 @@
             color: $primary-brainFlix-black;
             font-family: "Avenir";
         }
+        &:focus{
+            border: .125rem solid $primary-brainFlix-blue;
+        }
         @include tablet {
             padding: .6rem .625rem;
             background-position: 6% center;
@@ -118,8 +117,7 @@
             background-position: 8% center;
             padding: .6rem .625rem;
             text-indent: 15%;
-        }
-         
+        }   
     }
 
     &__search-bar-dt{

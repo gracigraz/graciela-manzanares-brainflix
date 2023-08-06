@@ -3,9 +3,12 @@ import publish from '../../assets/images/publish.svg';
 import thumbnail from '../../assets/images/Upload-video-preview.jpg';
 import { Link } from 'react-router-dom';
 
+//page to add new video content to the site
+
 function UploadPage() {
+
+  //after form submission notifies about "upload" and redirect to homepage with default video selected
   const sendAlert = (event) => {
-    console.log(event);
     alert('Your video details have been uploaded!!');
   }
 
@@ -15,7 +18,7 @@ function UploadPage() {
       <div className='upload__container'>
         <div className='upload__thumbnail-container'>
           <p className="upload__thumbnail-title">VIDEO THUMBNAIL</p>
-          <img className="upload__thumbnail" src={thumbnail} alt='Thumbnail of video' />
+          <img className="upload__thumbnail" src={thumbnail} alt='bike handlebar and top tube (frame)' />
         </div>
         <form id="upload__form" className="upload__form">
           <label htmlFor="upload__input-title" className="upload__label-title">

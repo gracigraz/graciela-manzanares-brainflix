@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './NextVideo.scss';
 
-//accept video as props and selectVideo function
+//accept filteredVideos as props 
 function NextVideo({ title, channel, image, id }) {
 
     return (

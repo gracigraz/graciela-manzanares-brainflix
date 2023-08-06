@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import './NotFoundPage.scss';
+
+
 function NotFoundPage(){
     return (
-        <div>404 - Page Not Found </div>
+        <div className='not-found-page'>404 - Page Not Found </div>
     );
 }
 
