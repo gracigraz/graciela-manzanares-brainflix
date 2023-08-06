@@ -6,7 +6,7 @@
 .comments{
     color: $primary-brainFlix-black;
     background-color: $primary-brainFlix-white;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem;
     @include tablet{
         padding: 0 2.35rem;
     }
@@ -97,7 +97,7 @@
     }
     &__input-message{
         color: $primary-brainFlix-black;
-        
+        font-family: "Avenir";
         @include font-form-label;
         background-color: $secondary-alabaster;
         border: .0625rem solid $secondary-mercury;
@@ -119,7 +119,7 @@
             color: $primary-brainFlix-black;
             position: absolute;
             left: .75rem;
-            top: .75rem;
+            top: .5rem;
             padding: 0.25rem;
             font-family: "Avenir";
         }
@@ -153,23 +153,10 @@
             min-height: 3.125vw;
             margin: 0 0 0.275rem 0 ;
             width: 25.5%;
-
         }
         &:hover {
             background-color: $secondary-brainFlix-darkBlue;
         }
-
-    }
-    &__button-content > span{
-        text-align: center;
-        @include font-button-label;
-        @include tablet {
-            @include font-button-label-dt
-        }
-        @include desktop {
-            @include font-button-label-dt
-        }
-
     }
     &__add-img{
         height: 1.2rem;
@@ -183,7 +170,6 @@
 
     &__card{
         display: flex;
-        flex-direction: row;
         border-top: .0625rem solid $secondary-mercury;
         padding-top: 0.875rem;
         @include tablet{
@@ -229,7 +215,6 @@
     }
     &__header{
         display: flex;
-        flex-direction: row;
         align-items: baseline;
         justify-content: space-between;
 
@@ -247,33 +232,26 @@
         }
         @include desktop{
             margin-right: 1rem;
-            
         }
 
     }
     &__date{
-        
         @include font-body-copy;
         color: $primary-brainFlix-silver;
-
         @include tablet {
             @include font-body-copy-dt;
         }
-
         @include desktop {
-            padding-right: 1.5rem;
-            
+            padding-right: 1.5rem;  
         }
 
     }
     &__comment{
         @include font-body-copy;
-
         @include tablet {
             @include font-body-copy-dt;
             margin-block-start: .375rem;
         }
-
         @include desktop {
             padding-right: 1.5rem;
             margin-block-start: 0;
