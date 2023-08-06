@@ -5,8 +5,8 @@ import './NextVideo.scss';
 function NextVideo({ title, channel, image, id }) {
 
     return (
-        <div>
-        <Link className="next-video" to={`/video/${id}`}>
+        <div className="next-video">
+        <Link to={`/video/${id}`}>
             <img className="next-video__thumbnail"
                 src={image}
                 alt={`Thumbnail of video: ${title}`} />
