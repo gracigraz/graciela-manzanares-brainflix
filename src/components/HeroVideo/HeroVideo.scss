@@ -1,25 +1,24 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography";
 
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/typography';
+.hero-video {
+  background-color: $secondary-brainFlix-darkBlack;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.hero-video{
-
-    background-color: $secondary-brainFlix-darkBlack;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__poster{
-        width: 100%;
-        aspect-ratio: 16/9;
-        @include tablet {
-            width: 90.5%;
-        }
-
-        @include desktop {
-            width: 66.5%;
-        }
+  &__poster {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
+    @include tablet {
+      width: 90.5%;
     }
+
+    @include desktop {
+      width: 66.5%;
+    }
+  }
 }

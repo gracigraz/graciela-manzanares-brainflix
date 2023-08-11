@@ -1,26 +1,27 @@
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/typography';
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography";
 
-.video-page{
-    width: 100%;
+.video-page {
+  width: 100%;
 
-    &__desktop-div{
-        @include desktop {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-        }
+  &__desktop-div {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
     }
+  }
 
-    &__left-column{
-        @include desktop {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-top: 0.625rem;
-        }
-
+  &__left-column {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 0.625rem;
+      width: 69.2vw;
+      flex-shrink: 0;
     }
+  }
 }
