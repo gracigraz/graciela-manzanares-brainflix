@@ -29,9 +29,7 @@ function VideoPlayerPage() {
     return video.id !== videoIdToDisplay;
   });
 
-  // const apiKey="93e99225-d77e-4b76-a61b-ac5c1d017864";
   const url = "http://localhost:8082/videos";
-  // const url = "https://project-2-api.herokuapp.com/videos?api_key="+apiKey;
   //empty dependency array so that it only run this once on mount (on first render)
   useEffect(() => {
     axios
@@ -47,7 +45,6 @@ function VideoPlayerPage() {
     if (videoIdToDisplay === null) return;
 
     const urlDetails = `http://localhost:8082/videos/` + videoIdToDisplay;
-    //const urlDetails = `https://project-2-api.herokuapp.com/videos/`+videoIdToDisplay+`?api_key=`+apiKey;
     //axios call that gets all the details of the selected video including likes, views etc..
     axios
       .get(urlDetails)

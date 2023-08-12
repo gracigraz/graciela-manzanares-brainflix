@@ -57,34 +57,32 @@
     }
   }
 
-  &__div-mobile {
+  &__div-left {
     display: flex;
     flex-direction: column;
     width: 50%;
 
     @include tablet {
       flex-direction: row;
+      justify-content: flex-start;
     }
 
     @include desktop {
-      flex-direction: row;
       padding-right: 1.5rem;
     }
+  }
 
-    &--left {
-      @include tablet {
-        justify-content: flex-start;
-      }
+  &__div-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    @include tablet {
+      flex-direction: row;
+      justify-content: flex-end;
     }
 
-    &--right {
-      @include tablet {
-        justify-content: flex-end;
-      }
-
-      @include desktop {
-        padding-right: 1.5rem;
-      }
+    @include desktop {
+      padding-right: 1.5rem;
     }
   }
 
