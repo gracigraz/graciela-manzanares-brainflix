@@ -15,7 +15,6 @@
 
   @include desktop {
     padding: 1rem 0rem 1rem 8rem;
-    // width: 85%;
   }
 
   &__title {
@@ -31,7 +30,6 @@
     }
 
     @include desktop {
-      @include font-page-header-dt;
       padding-top: 0rem;
     }
   }
@@ -45,12 +43,6 @@
     padding: 1rem 0;
 
     @include tablet {
-      border-top: none;
-      padding-top: 0;
-      padding-bottom: 0.5rem;
-    }
-
-    @include desktop {
       border-top: none;
       padding-top: 0;
       padding-bottom: 0.5rem;
@@ -94,10 +86,6 @@
       @include font-body-copy-dt;
       font-size: 0.75rem;
     }
-
-    @include desktop {
-      font-size: 0.75rem;
-    }
   }
 
   &__channel {
@@ -137,8 +125,6 @@
     }
 
     @include desktop {
-      @include font-body-copy-dt;
-      font-size: 0.75rem;
       margin-right: 0.25rem;
     }
   }

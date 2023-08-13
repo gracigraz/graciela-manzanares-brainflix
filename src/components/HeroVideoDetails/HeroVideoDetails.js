@@ -32,20 +32,3 @@ function HeroVideoDetails({ selectedVideo }) {
   );
 }
 export default HeroVideoDetails;
-
-{
-  /* <section className="hero-video-details">
-<h1 className="hero-video-details__title">{selectedVideo.title}</h1>
-<div className='hero-video-details__div-header'>
-    <div className="hero-video-details__div-mobile hero-video-details__div-mobile--left">
-        <h4 className="hero-video-details__channel">By {selectedVideo.channel}</h4>
-        <span className="hero-video-details__date">{date}</span>
-    </div>
-    <div className="hero-video-details__div-mobile hero-video-details__div-mobile--right">
-        <p className="hero-video-details__views">{selectedVideo.views}</p>
-        <p className="hero-video-details__likes">{selectedVideo.likes}</p>
-    </div>
-</div>
-<p className="hero-video-details__description">{selectedVideo.description}</p>
-</section> */
-}
